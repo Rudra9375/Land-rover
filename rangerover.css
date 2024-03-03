@@ -1,0 +1,662 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+
+
+}
+body::-webkit-scrollbar {
+    display: none; 
+}
+/* navigation part */
+.navbar {
+    overflow: hidden;
+    background-color: #fefffb;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: 1px solid #e0dfdf;
+    z-index:1;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #080808;
+    text-align: center;
+    padding: 28px 20px;
+    text-decoration: none;
+    font-size: 13px;
+}
+.navbar a.split{
+    float: right;
+  
+  color: rgb(3, 3, 3);
+}
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+.navbar i{
+    font-size: 1.6vw;
+    flex-wrap: 800;
+    display:none;
+}
+
+
+.rangeroverlogo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    position: fixed;
+    top: 25px;
+    left: 41%;
+    z-index: 1;
+    height:auto;
+     width:15%;
+     overflow: hidden;
+}
+/* navigation bar end */
+/* video part */
+.video1 {
+    margin: 3% 4%;
+    display: block;
+    height: 30%;
+    width: 92%;
+}
+
+.videotext {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    position: relative;
+    left: 3.9%;
+    top: -30px;
+}
+/* video part over */
+/* small image start */
+
+.divscroll{
+    background-color: #f4f2f2;
+    display: flex;
+    padding:4% 2%;
+}
+.section{
+    display:flex;
+    margin-left: 17px;
+}
+a{
+    text-decoration: none;
+    color: #080808;
+}
+.section img:hover {
+  
+    transition: all 0.6s;
+    filter:brightness(0.7)
+}
+
+/* small img part over */
+/* main part start */
+.contentdiv1{
+    scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+        display: flex;
+        scroll-behavior: smooth;
+       
+
+    .x-scroll{
+            flex: none;
+            display:flex;
+            scroll-snap-align: start;
+            
+            width:100vw;
+    }    
+}
+.contentdiv1::-webkit-scrollbar {
+    display: none; 
+}
+.content1 {
+    margin-left: 5%;
+    width:90%
+}
+
+.content1p {
+    margin: 4% 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.content1p2 {
+    display: flex;
+    font-size: 20px;
+    margin: 0% 5%;
+    position: relative;
+    top: -30px;
+    color: #575656;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content1a {
+    display: flex;
+    border: 1px #080808 solid;
+    height: 17px;
+    width: 100px;
+    padding: 1% 1.5%;
+    margin: 0% 5%;
+    justify-content: center;
+    background-color: #080808;
+    color: white;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.content1a:hover {
+    background-color: white;
+    color: #080808;
+    width: 150px;
+    transition: all 1s;
+}
+
+.content1img {
+    margin: 0% 5%;
+    text-decoration: none;
+    color: #080808;
+    font-size: 13px;
+
+}
+
+.content1img:hover {
+    text-decoration: underline;
+}
+.contentdiv2{
+    margin-bottom: 4%;
+}
+.content2 {
+    margin-left: 5%;
+    margin-top: 1%;
+    width:90%
+}
+/* main part end */
+/* footer part start */
+.contenttext1 {
+    font-size: 12px;
+    padding-top: 1%;
+    position: absolute;
+    left: 3%;
+}
+
+.contenttext1 a {
+    text-decoration: none;
+    color: #080808;
+}
+
+.contenttext1 p {
+    margin-top: 4.6%;
+}
+
+.contenttext1 p:hover {
+    text-decoration: underline;
+}
+
+.contenttext2 {
+    font-size: 12px;
+    position: absolute;
+    left: 28%;
+    padding-top: 1%;
+}
+
+.contenttext2 a {
+    text-decoration: none;
+    color: #080808;
+}
+
+.contenttext2 p {
+    margin-top: 4.6%;
+}
+
+.contenttext2 p:hover {
+    text-decoration: underline;
+}
+
+.contenttext3 {
+    font-size: 12px;
+    position: absolute;
+    left: 51%;
+    padding-top: 1%;
+}
+
+.contenttext3 a {
+    text-decoration: none;
+    color: #080808;
+}
+
+.contenttext3 p {
+    margin-top: 4.6%;
+}
+
+.contenttext3 p:hover {
+    text-decoration: underline;
+}
+
+.media {
+    position: absolute;
+    left: 74%;
+    font-size: 15px;
+    margin-top: 1em;
+}
+
+.facebook {
+    display:flex;
+    position: absolute;
+    left: 74%;
+    margin-top: 3em;
+    filter: grayscale(100%);
+
+}
+
+.x {
+    display:flex;
+    position: absolute;
+    left: 74%;
+    margin-top: 7em;
+    filter: grayscale(97%);
+}
+
+.youtube {
+    display:flex;
+    position: absolute;
+    left: 74%;
+    margin-top: 11em;
+    filter: grayscale(100%);
+}
+
+.instagram {
+    display:flex;
+    position: absolute;
+    left: 74%;
+    margin-top: 15em;
+    filter: grayscale();
+}
+
+.facebooktext {
+    display: flex;
+    position: absolute;
+    left: 77.9%;
+    margin-top: 6.6em;
+    font-size: 10px;
+    color: #080808;
+}
+
+.xtext {
+    position: absolute;
+    left: 77.9%;
+    margin-top: 13em;
+    font-size: 10px;
+    color: #080808;
+}
+
+.youtubetext {
+    position: absolute;
+    left: 77.9%;
+    margin-top: 19em;
+    font-size: 10px;
+    color: #080808;
+}
+
+.instagramtext {
+    position: absolute;
+    left: 77.9%;
+    margin-top: 26em;
+    font-size: 10px;
+    color: #080808;
+}
+
+.facebook:hover {
+    filter: grayscale(0%);
+}
+
+.x:hover {
+    filter: grayscale(0%);
+}
+
+.youtube:hover {
+    filter: grayscale(0%);
+}
+
+.instagram:hover {
+    filter: grayscale(0%);
+}
+.aboutus{
+    margin-top:400px;
+}
+.hr {
+    position: absolute;
+    top: px;
+    left: 40px;
+    font-size: 13px;
+    margin-top: 17px;
+    cursor: pointer;
+}
+
+.term {
+    position: absolute;
+    top: px;
+    left: 210px;
+    font-size: 13px;
+    margin-top: 17px;
+    cursor: pointer;
+}
+
+.contact {
+    position: absolute;
+    top: px;
+    left: 420px;
+    font-size: 13px;
+    margin-top: 17px;
+    cursor: pointer;
+}
+
+.privacy {
+    position: absolute;
+    top: px;
+    left: 590px;
+    font-size: 13px;
+    margin-top: 17px;
+    cursor: pointer;
+}
+
+.hr:hover {
+    text-decoration: underline;
+}
+
+.term:hover {
+    text-decoration: underline;
+}
+
+.privacy:hover {
+    text-decoration: underline;
+}
+
+.contact:hover {
+    text-decoration: underline;
+}
+
+/* footer part end */
+@media only screen and (max-width:1083px){
+    .navbar a{
+        display:none;
+       }
+       .navbar i{
+        display:block;
+        padding: 1vh 1.5vw;
+        font-size: 18px;
+       }
+       .navbar{
+        height:40px;
+       }
+       .rangeroverlogo{
+            width:32%;
+            top: 17px;
+            left: 33%;
+       }
+}
+
+@media only screen and (max-width:1382px) and (min-width:765px){
+    
+    .scroll-container img {
+        width: 90%; 
+        height: 45%;
+        margin-left: 5%;
+    }
+   
+    .scroll-container p {
+        font-size:14px;
+        margin-top: 8%;
+        text-decoration: none;
+        color: black;
+        margin-left: 7%;
+    }
+    
+    .facebooktext {
+        display: flex;
+        position: absolute;
+        left: 81%;
+        margin-top: 6.6em;
+        font-size: 10px;
+        color: #080808;
+    }
+    
+    .xtext {
+        display: flex;
+        position: absolute;
+        left: 81%;
+        margin-top: 13em;
+        font-size: 10px;
+        color: #080808;
+    }
+    
+    .youtubetext {
+        display: flex;
+        position: absolute;
+        left: 81%;
+        margin-top: 19em;
+        font-size: 10px;
+        color: #080808;
+    }
+    
+    .instagramtext {
+        display: flex;
+        position: absolute;
+        left: 81%;
+        margin-top: 26em;
+        font-size: 10px;
+        color: #080808;
+    }
+    footer{
+        margin-top:50px;
+    }
+    .texts {
+        font-size: small;
+        margin-left: 8px;
+    }
+    .media{
+        font-size:12px;
+    }
+    .contenttext1 {
+        font-size: 10px;
+        
+    }
+    .contenttext2 {
+        font-size: 10px;
+        
+    }
+    .contenttext3 {
+        font-size: 10px;
+        
+    }
+}
+@media only screen and (max-width:765px) and (min-width:280px){
+    
+    
+        .video1 {
+            margin: 12% 4%;
+            display: flex;
+            height: 35%;
+            width: 93%;
+        }
+        .content1p {
+            margin: 5% 5%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+        
+        }    
+        .content1p2 {
+            display: flex;
+            font-size: 20px;
+            margin: 4% 5%;
+            position: relative;
+            top: -10px;
+            color: #575656;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .facebook {
+            position: absolute;
+            left: 5%;
+            margin-top: 3em;
+            filter: grayscale(100%);
+        
+        }
+        
+        .x {
+            position: absolute;
+            left: 20%;
+            margin-top: 3em;
+            filter: grayscale(97%);
+        }
+        
+        .youtube {
+            position: absolute;
+            left: 35%;
+            margin-top: 3em;
+            filter: grayscale(100%);
+        }
+        
+        .instagram {
+            position: absolute;
+            left: 50%;
+            margin-top: 3em;
+            filter: grayscale();
+        }
+        .facebooktext{
+            display:none;
+        }
+        .xtext{
+            display:none;
+        }
+        .instagramtext{
+            display:none;
+        }
+        .youtubetext{
+            display:none;
+        }
+        .contenttext1{
+            display:none;
+        }
+        .contenttext2{
+            display:none;
+        }
+        .contenttext3{
+            display:none;
+        }
+        .media {
+            position: absolute;
+            left: 5%;
+            font-size: 15px;
+            margin-top: 1em;
+        }
+        hr{
+            display:none;
+        }
+        footer{
+            margin-top:350px;
+        }
+        .hr {
+            position: absolute;
+            
+            left: 5%;
+            font-size: 13px;
+            margin-top: 150px;
+            cursor: pointer;
+        }
+        
+        .term {
+            position: absolute;
+            top: px;
+            left: 5%;
+            font-size: 13px;
+            margin-top: 190px;
+            cursor: pointer;
+        }
+        
+        .contact {
+            position: absolute;
+            top: px;
+            left: 5%;
+            font-size: 13px;
+            margin-top: 230px;
+            cursor: pointer;
+        }
+        
+        .privacy {
+            position: absolute;
+            top: px;
+            left: 5%;
+            font-size: 13px;
+            margin-top: 270px;
+            cursor: pointer;
+        }
+       .navbar a{
+        display:none;
+       }
+       .navbar i{
+        display:block;
+        padding: 1vh 1.5vw;
+        font-size: 18px;
+       }
+       .navbar{
+        height:40px;
+       }
+       .rangeroverlogo{
+            width:32%;
+            top: 17px;
+            left: 33%;
+       }
+       .texts{
+        font-size:9px;
+        padding-left:7px;
+       }
+       .divscroll{
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+        display: flex;
+        padding:4% 4%;
+
+        section{
+            flex: none;
+            display:flex;
+            scroll-snap-align: start;
+            padding-left: 6px;
+       }
+       
+       }
+       .divscroll::-webkit-scrollbar {
+        display: none; 
+    }
+     
+      .video1 {
+        margin: 8% 0%;
+        display: block;
+        height: 30%;
+        width: 100%;
+    }
+    .videotext {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+        left: 3%;
+        top: 0%;
+    }
+    .content1{
+        width:100%;
+        margin-left:0%
+    } 
+    .content2{
+        width:100%;
+        margin-left:0%
+    }   
+      
+}
