@@ -9,18 +9,26 @@
 
 <body>
     <div>
-        <div class="navbar">
-            <div>
-                <i class="ri-menu-line"></i>
-                <a href="#1">VEHICLES</a>
-                <a href="#2">PURCHASE</a>
-                <a href="#3">OWNERS</a>
-                <a href="#4">EXPLORES</a>
-                <a href="#7" class="split">BUILDS</a>
-                <a href="#6" class="split">RETAILERS</a>
-
-            </div>
-        </div>
+        <div class="sidebar">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="currentColor"><path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"/ onclick="hidesidebar()"></svg>
+               <a href="" class="rangelogo"><img src="DEFENDER_Slate_Blue_RGB.svg"></a><br>
+           <a href="" class="a">VEHICLES</a>
+           <a href="" class="a">PURCHASE</a>
+           <a href="" class="a">OWNERS</a>
+           <a href="" class="a">EXPLORES</a><br>
+           <a href="" class="sidelink">RETAILERS</a>
+           <a href="" class="sidelink">BUILDS</a>
+       </div>
+       <div class="navbar">
+           <i class="ri-menu-line" onclick="showsidebar()"></i>
+               <a href="">VEHICLES</a>
+               <a href="">PURCHASE</a>
+               <a href="">OWNERS</a>
+               <a href="">EXPLORES</a>
+               <a href="" class="split">RETAILERS</a>
+               <a href="" class="split">BUILDS</a>
+       </div>
+       
         <div>
             <a href="" class="defenderlogo"><img src="DEFENDER_Slate_Blue_RGB.svg" heigth="auto" width="60%"></a>
         </div>
@@ -31,27 +39,30 @@
             <a href="" class="videotext">EMBRACE&nbsp;THE &nbsp;IMPOSSIBLE</a>
         </div>
         <div class="divscroll">
-                <section class="allsection">
+            <section class="allsection">
                 <a href=""><img src="L663_23-5MY_096_GLHD_SEDONA_RED_DX_HOB_FULL.webp" height="190px" width="420px">
-                    <p>DEFENDER 130<br><span style="font-size:small;color:rgba(40, 39, 39, 0.769)">Price from: ₹ 8 790 000*</span></p><br>
-                    <i class="ri-arrow-right-s-line"
-                        style="text-decoration:none; color:black;font-size: 13px;">EXPLORE</i><br><br>
-                    <i class="ri-arrow-right-s-line" style="text-decoration:none; color:black;font-size: 13px;">BUILD
-                        YOUR OWN</i>
-                </a>
-                </section>
-                <section class="allsection">
-                <a href=""><img src="L663_21MY_030_GLHD_HOB.webp" height="190px" width="420px">
-                    <p>DEFENDER 110<br><span style="font-size:small;color:rgba(40, 39, 39, 0.769)">Price from: Price from: ₹ 9 700 000*</span></p><br>
+                    <p>DEFENDER 130<br><span style="font-size:small;color:rgba(40, 39, 39, 0.769)">Price from: ₹ 8 790
+                            000*</span></p><br>
                     <i class="ri-arrow-right-s-line"
                         style="text-decoration:none; color:black;font-size: 13px;">EXPLORE</i><br><br>
                     <i class="ri-arrow-right-s-line" style="text-decoration:none; color:black;font-size: 13px;">BUILD
                         YOUR OWN</i>
                 </a>
             </section>
-                <section class="allsection">
+            <section class="allsection">
+                <a href=""><img src="L663_21MY_030_GLHD_HOB.webp" height="190px" width="420px">
+                    <p>DEFENDER 110<br><span style="font-size:small;color:rgba(40, 39, 39, 0.769)">Price from: Price
+                            from: ₹ 9 700 000*</span></p><br>
+                    <i class="ri-arrow-right-s-line"
+                        style="text-decoration:none; color:black;font-size: 13px;">EXPLORE</i><br><br>
+                    <i class="ri-arrow-right-s-line" style="text-decoration:none; color:black;font-size: 13px;">BUILD
+                        YOUR OWN</i>
+                </a>
+            </section>
+            <section class="allsection">
                 <a href=""><img src="L663_23MY_052_GLHD_HOB_FULL.webp" height="190px" width="420px">
-                    <p>DEFENDER 90<br><span style="font-size:small;color:rgba(40, 39, 39, 0.769)">Price from:Price from: ₹ 9 850 000*</span></p><br>
+                    <p>DEFENDER 90<br><span style="font-size:small;color:rgba(40, 39, 39, 0.769)">Price from:Price from:
+                            ₹ 9 850 000*</span></p><br>
                     <i class="ri-arrow-right-s-line"
                         style="text-decoration:none; color:black;font-size: 13px;">EXPLORE</i><br><br>
                     <i class="ri-arrow-right-s-line" style="text-decoration:none; color:black;font-size: 13px;">BUILD
@@ -61,38 +72,78 @@
         </div>
         <script>
             function myfunction() {
-                document.getElementById("1").style.boxShadow= "1px 0px 14px 5px rgba(36,206,222,0.79)";
-                document.getElementById("2").style.boxShadow= "1px 0px 14px 5px rgba(36,206,222,0.79)";
-                document.getElementById("3").style.boxShadow= "1px 0px 14px 5px rgba(36,206,222,0.79)";
-                
+                document.getElementById("1").style.boxShadow = "1px 0px 14px 5px rgba(36,206,222,0.79)";
+                document.getElementById("2").style.boxShadow = "1px 0px 14px 5px rgba(36,206,222,0.79)";
+                document.getElementById("3").style.boxShadow = "1px 0px 14px 5px rgba(36,206,222,0.79)";
+
+            }
+            function showsidebar(){
+                const sidebar=document.querySelector('.sidebar')
+                sidebar.style.display='flex'
+            }
+            function hidesidebar(){
+                const sidebar=document.querySelector('.sidebar')
+                sidebar.style.display='none'
             }
         </script>
+        <div class="contentdiv1">
+            <section class="x-scroll">
+                <img src="Screenshot (70).png" class="content1" >
+            </section>
+            <section class="x-scroll">
+                <img src="Screenshot (94).png" class="content1">
+            </section>
+            <section class="x-scroll">
+                <img src="Screenshot (95).png" class="content1">
+            </section>
+        </div>
         <div>
-            <img src="Screenshot (70).png" width="90%" class="content1">
             <p class="content1p">DEFENDER 130</p>
             <p class="content1p2">Freedom for all. Eight seats for shared exploration.</p>
             <a href="" class="content1a">EXPLORE</a><br><br>
             <a href="" class="content1img" onclick="myfunction()" id="1"><img src="Screenshot (61) - Copy.png"
                     height="auto" width="7px">&nbsp;&nbsp;&nbsp;BUILD YOUR OWN</a>
-        </div><br><br><br><br>
-        <div style="background-color: rgb(242, 242, 242);">
-            <img src="Screenshot (72).png" width="90%" class="content2">
+        </div>
+
+        <div style="background-color: rgb(242, 242, 242);" class="contentdiv1">
+            <section class="x-scroll">
+                <img src="Screenshot (72).png" class="content2">
+            </section>
+            <section class="x-scroll">
+                <img src="Screenshot (98).png" class="content2">
+            </section>
+            <section class="x-scroll">
+                <img src="Screenshot (97).png" class="content2">
+            </section>
+        </div>
+        <div>
             <p class="content1p">DEFENDER 110</p>
             <p class="content1p2">Pack up and go anywhere. Optional third-row seating and serious capability.</p>
             <a href="" class="content1a">EXPLORE</a><br><br>
-            <a href="" class="content1img" onclick="myfunction()" id="2"><img src="Screenshot (61) - Copy.png" height="auto"
-                    width="7px">&nbsp;&nbsp;&nbsp;BUILD YOUR OWN</a><br><br><br><br><br>
+            <a href="" class="content1img" onclick="myfunction()" id="2"><img src="Screenshot (61) - Copy.png"
+                    height="auto" width="7px">&nbsp;&nbsp;&nbsp;BUILD YOUR OWN</a><br><br>
+        </div>
+
+        <div class="contentdiv1">
+            <section class="x-scroll">
+                <img src="Screenshot (73).png" class="content2">
+            </section>
+            <section class="x-scroll">
+                <img src="Screenshot (99).png" class="content2">
+            </section>
+            <section class="x-scroll">
+                <img src="Screenshot (100).png" class="content2">
+            </section>
         </div>
         <div>
-            <img src="Screenshot (73).png" width="90%" class="content2">
             <p class="content1p">DEFENDER 90</p>
             <p class="content1p2">Defender in its purest form. Endless possibilities await.</p>
             <a href="" class="content1a">EXPLORE</a><br><br>
-            <a href="" class="content1img" onclick="myfunction()" id="3"><img src="Screenshot (61) - Copy.png" height="auto"
-                    width="7px">&nbsp;&nbsp;&nbsp;BUILD YOUR OWN</a>
-        </div><br><br><br><br>
+            <a href="" class="content1img" onclick="myfunction()" id="3"><img src="Screenshot (61) - Copy.png"
+                    height="auto" width="7px">&nbsp;&nbsp;&nbsp;BUILD YOUR OWN</a>
+        </div><br><br><br>
         <div style="background-color: rgb(242, 242, 242);">
-            <img src="Screenshot (75).png" width="90%" class="content2">
+            <img src="Screenshot (75).png" class="content3">
             <p class="content1p">TRAVEL.FROM A UNIQUE PERSPECTIVE</p>
             <p class="content1p2">Youer self-drive adventure of a lifetime</p>
             <a href="" class="content1a">EXPLORE</a><br><br><br>

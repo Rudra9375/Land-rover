@@ -10,21 +10,29 @@
 
 <body>
 <div>
+    <div class="sidebar">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="currentColor"><path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"/ onclick="hidesidebar()"></svg>
+           <a href="" class="rangelogo"><img src="DISCOVERY_Slate_Blue_RGB.svg"></a><br>
+       <a href="" class="a">VEHICLES</a>
+       <a href="" class="a">PURCHASE</a>
+       <a href="" class="a">OWNERS</a>
+       <a href="" class="a">EXPLORES</a><br>
+       <a href="" class="sidelink">RETAILERS</a>
+       <a href="" class="sidelink">BUILDS</a>
+   </div>
+   <div class="navbar">
+       <i class="ri-menu-line" onclick="showsidebar()"></i>
+           <a href="">VEHICLES</a>
+           <a href="">PURCHASE</a>
+           <a href="">OWNERS</a>
+           <a href="">EXPLORES</a>
+           <a href="" class="split">RETAILERS</a>
+           <a href="" class="split">BUILDS</a>
+   </div>
     
-    <div class="navbar">
-        <div>
-            <i class="ri-menu-line"></i>
-            <h3><img src="DISCOVERY_Slate_Blue_RGB.svg" class="discoverylogo"></h3>
-        <a href="#1">VEHICLES</a>
-        <a href="#2">PURCHASE</a>
-        <a href="#3">OWNERS</a>
-        <a href="#4">EXPLORES</a>
-        <a href="#7" class="split">BUILDS</a>
-        <a href="#6" class="split">RETAILERS</a>
-        
+    <div>
+        <a href="" class="discoverylogo"><img src="DISCOVERY_Slate_Blue_RGB.svg"></a>
     </div>
-    </div>
-       
     <div>
         <video muted loop autoplay  class="video1">
             <source src="LR_DX_Clouds_1920x1080_6___lessgreen_020523_1.mp4">
@@ -47,26 +55,52 @@
     <script>
         function myfunction() {
             document.getElementById("1").style.boxShadow= "1px 0px 14px 5px rgba(36,206,222,0.79)";
-            document.getElementById("2").style.boxShadow= "1px 0px 14px 5px rgba(36,206,222,0.79)";
-            
-            
+            document.getElementById("2").style.boxShadow= "1px 0px 14px 5px rgba(36,206,222,0.79)";   
         }
+        function showsidebar(){
+                const sidebar=document.querySelector('.sidebar')
+                sidebar.style.display='flex'
+            }
+            function hidesidebar(){
+                const sidebar=document.querySelector('.sidebar')
+                sidebar.style.display='none'
+            }
     </script>
-   <div>
-    <img src="Screenshot (76).png" width="90%" class="content1">
+   <div class="contentdiv1">
+    <section class="x-scroll">
+    <img src="Screenshot (76).png"  class="content1">
+    </section>
+    <section class="x-scroll">
+        <img src="Screenshot (101) - Copy.png"  class="content1">
+    </section>
+    <section class="x-scroll">
+        <img src="Screenshot (102).png"  class="content1">
+    </section>
+    </div>
+    <div>
     <p class="content1p">DISCOVERY</p>
     <p class="content1p2">Seven-seat sophistication.</p>
-    <a href="" class="content1a">EXPLORE</a><br><br>
+    <a href="" class="content1a">EXPLORE</a><br>
     <a href="" class="content1img" onclick="myfunction()" id="1"><img src="Screenshot (61) - Copy.png" height="auto" width="7px">&nbsp;&nbsp;&nbsp;BUILD YOUR OWN</a>
-   </div>
-   <div style="background-color: rgb(244, 247, 247);">
+   </div><br>
+   <div style="background-color: rgb(244, 247, 247);" class="contentdiv1">
+    <section class="x-scroll">
     <img src="Screenshot (77).png" width="90%" class="content2">
+    </section>
+    <section class="x-scroll">
+        <img src="Screenshot (104).png" width="90%" class="content2">
+    </section>
+    <section class="x-scroll">
+        <img src="Screenshot (105).png" width="90%" class="content2">
+    </section>
+    </div>
+    <div>
     <p class="content1p">DISCOVERY SPORT</p>
     <p class="content1p2">For your next adventure.</p>
-    <a href="" class="content1a">EXPLORE</a><br><br>
+    <a href="" class="content1a">EXPLORE</a><br>
     <a href="" class="content1img" onclick="myfunction()" id="2"><img src="Screenshot (61) - Copy.png" height="auto" width="7px">&nbsp;&nbsp;&nbsp;BUILD YOUR OWN</a><br><br><br><br>
    </div>
-   </div><br><br>
+   
    <div class="contenttext1">
     <a href=""><b>
             <p>VEHICLES</p>
